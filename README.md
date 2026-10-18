@@ -1,3 +1,5 @@
+<div align="center">
+
 # ⚡ Employee Management System (EMS)
 
 > A modern, role-based Task & Workforce Management Web Application built with **React 18**, **Tailwind CSS**, and **Vite**.
@@ -5,13 +7,16 @@
 [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.2.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.13-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)](https://suryat8957.github.io/Employee-Management-System/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](http://makeapullrequest.com)
+
+**[🌐 View Live Demo](https://suryat8957.github.io/Employee-Management-System/)**
 
 <p align="center">
   <a href="#-key-features">Features</a> •
   <a href="#-demo-credentials">Demo Credentials</a> •
   <a href="#-quick-start">Quick Start</a> •
+  <a href="#-deployment-to-github-pages">Deploy to GitHub Pages</a> •
   <a href="#%EF%B8%8F-system-architecture">Architecture</a> •
   <a href="#-project-structure">Folder Structure</a> •
   <a href="#-roadmap">Roadmap</a>
@@ -184,12 +189,12 @@ npm -v
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/ems.git
+   git clone https://github.com/suryat8957/Employee-Management-System.git
    ```
 
 2. **Navigate to the project root:**
    ```bash
-   cd ems
+   cd Employee-Management-System
    ```
 
 3. **Install dependencies:**
@@ -207,6 +212,35 @@ npm -v
 
 ---
 
+## 🌐 Deployment to GitHub Pages
+
+This project is pre-configured for seamless deployment to **GitHub Pages**. You can deploy using either of two methods:
+
+### Method 1: Automatic Deployment via GitHub Actions (Recommended)
+A ready-to-use CI/CD workflow is located in `.github/workflows/deploy.yml`.
+
+1. Commit and push your code to GitHub:
+   ```bash
+   git add .
+   git commit -m "feat: setup project for GitHub Pages"
+   git push origin main
+   ```
+2. On GitHub, navigate to your repository:
+   - Go to **Settings** > **Pages**
+   - Under **Build and deployment** > **Source**, select **GitHub Actions**
+3. That's it! GitHub will automatically build and publish your site to:
+   `https://suryat8957.github.io/Employee-Management-System/`
+
+### Method 2: Manual Deployment via `gh-pages` Script
+If you prefer deploying directly from your terminal:
+
+```bash
+npm run deploy
+```
+*This command automatically triggers `npm run build` and publishes the production `dist/` directory directly to your repository's `gh-pages` branch.*
+
+---
+
 ## 📜 Available Scripts
 
 In the project directory, you can run:
@@ -214,8 +248,9 @@ In the project directory, you can run:
 | Command | Action |
 | :--- | :--- |
 | `npm run dev` | Starts the Vite development server with Hot Module Replacement (HMR). |
-| `npm run build` | Compiles and optimizes assets into the `dist/` directory for production. |
+| `npm run build` | Compiles and optimizes assets into the `dist/` directory for production with relative base paths. |
 | `npm run preview`| Locally previews the production build before deployment. |
+| `npm run deploy` | Builds the project and deploys the `dist/` folder to GitHub Pages via `gh-pages`. |
 | `npm run lint` | Runs ESLint to identify code smells and enforce coding standards. |
 
 ---
