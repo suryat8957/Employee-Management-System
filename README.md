@@ -10,11 +10,19 @@
 [![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-222222?style=for-the-badge&logo=githubpages&logoColor=white)](https://suryat8957.github.io/Employee-Management-System/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-**[🌐 View Live Demo](https://suryat8957.github.io/Employee-Management-System/)**
+### 🌐 [Click Here to View Live Demo](https://suryat8957.github.io/Employee-Management-System/)
+
+| Role | Email ID | Password | Action |
+| :--- | :--- | :--- | :--- |
+| **👑 Admin** | `admin@me.com` | `123` | Create & assign tasks, track all employees |
+| **👤 Employee (Arjun)** | `e@e.com` | `123` | View task feed, accept/complete tasks |
+| **👥 Other Employees** | `employee2@example.com` ... `employee5@example.com` | `123` | Test Sneha, Ravi, Priya, Karan profiles |
+
+*(Note: The login page also features an interactive **Click-to-Autofill** button so you can log in instantly without typing!)*
 
 <p align="center">
   <a href="#-key-features">Features</a> •
-  <a href="#-demo-credentials">Demo Credentials</a> •
+  <a href="#-demo-credentials">All Credentials</a> •
   <a href="#-quick-start">Quick Start</a> •
   <a href="#-deployment-to-github-pages">Deploy to GitHub Pages</a> •
   <a href="#%EF%B8%8F-system-architecture">Architecture</a> •
